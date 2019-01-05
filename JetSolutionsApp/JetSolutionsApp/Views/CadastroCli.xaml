@@ -1,12 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="JetSolutionsApp.Views.CadastroCli">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="jetSolutions.CadastroCli">
+    <!--<ContentPage.Content>-->
+    <!--<ScrollView>-->
+    <StackLayout Margin="15">
+        <Label Text="Cadastro de Cliente" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Label Text="Nome"/>
+        <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray" />
+        <Label Text="CPF"/>
+        <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
+        <Label Text="CEP"/>
+        <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
+        <Label Text="Rua"/>
+        <Entry />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Label Text="Bairro"/>
+                <Entry/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Cidade" WidthRequest="50" />
+                <Entry/>
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+        <Label Text="Telefone"/>
+        <Entry Placeholder="(12)34567-7890" PlaceholderColor="LightGray"/>
+        <Label Text="Email"/>
+        <Entry Placeholder="exemplo@provedor.com" PlaceholderColor="LightGray"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Cadastrar" 
+                    Clicked="CriaCadastro"
+                    BorderRadius="8"
+                    BackgroundColor="#70db70" 
+                    TextColor="White">
+            </Button>
+            <Button Text="Cancelar" 
+                    BackgroundColor="Red" 
+                    BorderRadius="8"
+                    TextColor="White">
+            </Button>
+            <Button Text="Limpar" 
+                    BackgroundColor="Yellow"
+                    BorderRadius="8"                    
+                    >
+            </Button>
+        </StackLayout>
+    </StackLayout>
+
 </ContentPage>

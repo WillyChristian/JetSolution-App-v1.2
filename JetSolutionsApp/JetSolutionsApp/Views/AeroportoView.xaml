@@ -1,12 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="JetSolutionsApp.Views.AeroportoView">
+             x:Class="jetSolutions.Views.AeroportoView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Image Source="logoJet4u.png" WidthRequest="200"  HeightRequest="80" HorizontalOptions="Center" Margin="0,-15"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Aeroporto de destino" FontSize="15" TextDecorations="Underline" TextColor="#000136" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                <ListView x:Name="Aeroportos_listview" ItemsSource="{Binding Aeroportos}" RowHeight="70" ItemTapped="TocarItem" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding Nome_Aeropoto}" FontSize="16" TextColor="#221"/>
+                                        <Label Text=", "/>
+                                        <Label Text="IATA: " FontSize="13" TextColor="#555" VerticalOptions="End"/>
+                                        <Label Text="{Binding IATA}"  FontSize="15" FontAttributes="Bold" TextColor="#222" />
+                                        <Label Text="  ICAO: "  FontSize="13" TextColor="#555" VerticalOptions="End"  />
+                                        <Label Text="{Binding ICAO}"  FontSize="15" FontAttributes="Bold"  TextColor="#222" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding Municipio}" FontSize="Small" Margin="0" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text=" / "/>
+                                        <Label Text="{Binding Estado}"  FontSize="Small" Margin="0" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

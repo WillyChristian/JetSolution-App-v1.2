@@ -4,7 +4,7 @@
              x:Class="JetSolutionsApp.Views.AvaliacaoView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Págiona de avaliação de alguma coisa que eu (Willy) ainda não faço sequer idéia do que seja..."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
