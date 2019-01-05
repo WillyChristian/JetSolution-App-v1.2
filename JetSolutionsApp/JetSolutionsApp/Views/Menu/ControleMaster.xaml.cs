@@ -17,7 +17,7 @@ namespace JetSolutionsApp.Views.Menu
             InitializeComponent();
             Detail = new NavigationPage(new Home());
             Master = new MenuLateral();
-            App.Naveg = this;
+            Application.Naveg = this;
         }
     }
 }

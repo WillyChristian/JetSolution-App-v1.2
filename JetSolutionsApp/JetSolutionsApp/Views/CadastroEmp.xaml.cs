@@ -18,7 +18,7 @@ namespace JetSolutionsApp.Views
         }
         private void CriaCadastro(object sender, EventArgs e)
         {
-            App.Current.MainPage = new Views.Menu.ControleMaster();
+            Application.Current.MainPage = new Views.Menu.ControleMaster();
         }
     }
 }

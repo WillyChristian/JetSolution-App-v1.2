@@ -5,10 +5,10 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace JetSolutionsApp
 {
-    public partial class App : Application
+    public partial class Application : Xamarin.Forms.Application
     {
         public static MasterDetailPage Naveg { get; set; }
-        public App()
+        public Application()
         {
             InitializeComponent();
 

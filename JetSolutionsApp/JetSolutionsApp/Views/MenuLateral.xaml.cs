@@ -15,36 +15,36 @@ namespace JetSolutionsApp.Views
 
         private void ChamaCliente(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new CadastroCli());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new CadastroCli());
+            Application.Naveg.IsPresented = false;
 
         }
         private void ChamaAero(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new AeroportoView());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new AeroportoView());
+            Application.Naveg.IsPresented = false;
         }
         private void ChamaCombu(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new CombustivelView());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new CombustivelView());
+            Application.Naveg.IsPresented = false;
 
         }
         private void ChamaEmpresa(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new CadastroEmp());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new CadastroEmp());
+            Application.Naveg.IsPresented = false;
         }
         private void ChamaOS(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new Servicos());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new Servicos());
+            Application.Naveg.IsPresented = false;
 
         }
         private void ChamaSumo(object sender, EventArgs e)
         {
-            App.Naveg.Detail = new NavigationPage(new Insumos());
-            App.Naveg.IsPresented = false;
+            Application.Naveg.Detail = new NavigationPage(new Insumos());
+            Application.Naveg.IsPresented = false;
         }
     }
 }

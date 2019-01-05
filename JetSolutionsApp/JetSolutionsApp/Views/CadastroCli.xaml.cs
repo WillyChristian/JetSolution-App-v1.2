@@ -24,7 +24,7 @@ namespace JetSolutionsApp.Views
 
         private void CriaCad(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new Menu.ControleMaster());
+            Xamarin.Forms.Application.Current.MainPage = new NavigationPage(new Menu.ControleMaster());
         }
     }
 }
