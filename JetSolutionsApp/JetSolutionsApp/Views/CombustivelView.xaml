@@ -4,9 +4,62 @@
              x:Class="JetSolutionsApp.Views.CombustivelView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Image Source="logoJet4u.png"  WidthRequest="200"  HeightRequest="80" HorizontalOptions="Center" Margin="0,-15,0,15"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <ListView  x:Name="ListaFornecedores" 
+                           ItemsSource="{Binding Fornecedores}"
+                            RowHeight="80"
+                           HorizontalOptions="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand">
+                                    <StackLayout Orientation="Horizontal"  >
+                                        <Label 
+                                               Text="{Binding Fornecedor}"                                          WidthRequest="180"
+                                               FontSize="20"
+                                               HorizontalOptions="End"
+                                               VerticalOptions="End"/>
+                                        <Label Text="Preço: R$ "
+                                               FontSize="16"
+                                               HorizontalOptions="End"
+                                               VerticalOptions="End"
+                                               />
+                                        <Label Text="{Binding Preco}"
+                                               FontSize="16"
+                                               WidthRequest="80" 
+                                               VerticalOptions="End"
+                                               HorizontalOptions="Start"/>
+
+                                        <Button x:Name="btn"
+                                                FontSize="18"
+                                                HeightRequest="50"
+                                                WidthRequest="130"
+                                                VerticalOptions="CenterAndExpand"
+                                                BackgroundColor="DarkBlue"
+                                                BorderWidth="2"
+                                                BorderColor="DarkGray"
+                                                TextColor="White"
+                                                Text="{Binding Distribuidor}"                                       Clicked="Button_Clicked"   />
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label x:Name="DistribuidorLbl"  
+                                               Text="{Binding Distribuidor}"
+                                               FontSize="11"
+                                               WidthRequest="150"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="CenterAndExpand"
+                                               />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

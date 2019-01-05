@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace JetSolutionsApp.Views
+namespace JetSolutionsApp.Views.Aba
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : TabbedPage
+    public partial class Parceiros : ContentPage
     {
-        public Home()
+        public Parceiros()
         {
             InitializeComponent();
         }
