@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace JetSolutionsApp
 {
@@ -11,9 +12,8 @@ namespace JetSolutionsApp
         public Application()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainPage());
-        }
+        }  
 
         protected override void OnStart()
         {
