@@ -1,5 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 
@@ -11,7 +10,7 @@ namespace JetSolutionsApp
         public static MasterDetailPage Naveg { get; set; }
         public Application()
         {
-            InitializeComponent();
+            
             MainPage = new NavigationPage(new MainPage());
         }  
 
