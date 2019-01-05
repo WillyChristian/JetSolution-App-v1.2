@@ -4,11 +4,15 @@
              x:Class="JetSolutionsApp.Views.CadastroCli">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label  />
             <StackLayout>
-                <Button Clicked="CriaCad"/>
+                <Button Text="Cadastre-se!" 
+                    BackgroundColor="#70db70"
+                    Clicked="CriaCad"
+                    TextColor="White" 
+                    BorderRadius="8">
+                </Button>
+               
             </StackLayout>
         </StackLayout>
         

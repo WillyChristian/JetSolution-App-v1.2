@@ -29,7 +29,7 @@
                     BackgroundColor="#70db70" 
                     TextColor="White" 
                     BorderRadius="8"
-                    Clicked="OnNextButtonClicked">            
+                    Clicked="CriaCadastro">            
             </Button>
             
         </StackLayout>
