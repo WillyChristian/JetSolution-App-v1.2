@@ -1,14 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:JetSolutionsApp"
-             x:Class="JetSolutionsApp.MainPage">
+             x:Class="jetSolutions.MainPage">
+    
+    <StackLayout Margin="15" Padding="5">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Image Source="logo200x700"  Margin="5,20,5,70"/>
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="20">
+            <Image Source="user_50px.png" ScaleX="0.9" ScaleY="0.9"/>
+            <Label Text="Digite seu Login" FontAttributes="bold" FontSize="15" HorizontalOptions="Center"></Label>
+        </StackLayout>
+        <Entry Placeholder="Email" PlaceholderColor="LightGray" ></Entry>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="20" >
+            <Image Source="senha_50px.png" ScaleX="0.9" ScaleY="0.9"/>
+            <Label Text="Digite sua Senha" FontAttributes="bold" HorizontalOptions="Center"></Label>
+        </StackLayout>        
+        <Entry Placeholder="Digite sua senha" PlaceholderColor="LightGray" IsPassword="True"></Entry>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Fazer Login" 
+                    BackgroundColor="#03a9f4" 
+                    BorderRadius="8"
+                    TextColor="White">                
+            </Button>        
+            <Button Text="Cadastre-se!" 
+                    BackgroundColor="#70db70" 
+                    TextColor="White" 
+                    BorderRadius="8"
+                    Clicked="OnNextButtonClicked">            
+            </Button>
+            
+        </StackLayout>
     </StackLayout>
 
-</ContentPage>
+</ContentPage>  

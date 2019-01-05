@@ -7,11 +7,12 @@ namespace JetSolutionsApp
 {
     public partial class App : Application
     {
+        public static MasterDetailPage Naveg { get; set; }
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
