@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using JetSolutionsApp.Models;
@@ -35,13 +34,10 @@ namespace JetSolutionsApp.Views
                 new Aeroporto{Nome_Aeropoto="Brasília", Municipio="Brasília", Estado="DF", IATA ="BSB", ICAO="SBBR"}
             };
             BindingContext = this;
-            //this.Aeroportos_listview.ItemsSource = this.Aeroportos;
+         
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+    
 
         private void TocarItem(object sender, ItemTappedEventArgs e)
         {

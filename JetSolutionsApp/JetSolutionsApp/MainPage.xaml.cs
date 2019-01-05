@@ -13,10 +13,9 @@ namespace JetSolutionsApp
         {
             InitializeComponent();
         }
-
         public async void OnNextButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CadastroCli());
+            await Navigation.PushAsync(new Views.CadastroCli());
         }
     }
 }

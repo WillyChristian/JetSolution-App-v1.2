@@ -97,7 +97,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logo-branca.png" />
+    <AndroidResource Include="Resources\drawable\logo_branca.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\parceiro_50px.png" />
