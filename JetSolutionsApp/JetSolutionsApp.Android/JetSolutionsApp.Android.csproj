@@ -120,8 +120,5 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logoJet4u.png" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logoApresenta.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

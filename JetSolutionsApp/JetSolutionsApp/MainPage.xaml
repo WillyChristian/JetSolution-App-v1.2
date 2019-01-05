@@ -5,7 +5,7 @@
     
     <StackLayout Margin="15" Padding="5">
 
-        <Image Source="logo200x700"  Margin="5,20,5,70"/>
+        <Image Source="logoJet4u.png"  Margin="5,20,5,70"/>
         
         <StackLayout Orientation="Horizontal" HeightRequest="20">
             <Image Source="user_50px.png" ScaleX="0.9" ScaleY="0.9"/>
