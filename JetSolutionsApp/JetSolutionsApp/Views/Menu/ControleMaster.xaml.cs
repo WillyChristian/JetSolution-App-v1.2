@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace JetSolutionsApp.Views
+namespace JetSolutionsApp.Views.Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : TabbedPage
+    public partial class ControleMaster : MasterDetailPage
     {
-        public Home()
+        public ControleMaster()
         {
             InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
+            Detail = new NavigationPage(new Home());
+            Master = new MenuLateral();
+            App.Naveg = this;
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace jetSolutions.Models
+namespace JetSolutionsApp.Models
 {
     public class Aeroporto
     {

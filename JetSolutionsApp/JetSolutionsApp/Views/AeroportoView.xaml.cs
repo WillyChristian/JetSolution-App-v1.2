@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using jetSolutions.Models;
+using JetSolutionsApp.Models;
+using System;
 
-
-namespace jetSolutions.Views
+namespace JetSolutionsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AeroportoView : ContentPage
@@ -38,8 +34,13 @@ namespace jetSolutions.Views
                 new Aeroporto{Nome_Aeropoto="Confins", Municipio="Belo Horizonte", Estado="SP", IATA ="CNF", ICAO="SBBH"},
                 new Aeroporto{Nome_Aeropoto="Brasília", Municipio="Brasília", Estado="DF", IATA ="BSB", ICAO="SBBR"}
             };
-            this.BindingContext = this;
+            BindingContext = this;
             //this.Aeroportos_listview.ItemsSource = this.Aeroportos;
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
 
         private void TocarItem(object sender, ItemTappedEventArgs e)

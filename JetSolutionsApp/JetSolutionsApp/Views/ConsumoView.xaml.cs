@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using jetSolutions.Models;
+using JetSolutionsApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace jetSolutions.Views
+namespace JetSolutionsApp.Views
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]

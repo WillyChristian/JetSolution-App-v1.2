@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace JetSolutionsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : TabbedPage
+    public partial class Insumos : ContentPage
     {
-        public Home()
+        public Insumos()
         {
             InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using jetSolutions.Models;
+using JetSolutionsApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
