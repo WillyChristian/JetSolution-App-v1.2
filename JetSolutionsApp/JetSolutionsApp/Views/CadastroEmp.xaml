@@ -5,13 +5,16 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Margin="15">
-                <Label Text="Cadastro de Cliente" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
-                <Label Text="Nome"/>
+                <Label Text="Cadastro da Empresa" 
+                       FontSize="Large" 
+                       HorizontalOptions="Center" 
+                       FontAttributes="Bold"
+                       Margin="3, 3, 3, 25"/>
+
+                <Label Text="CNPJ"/>
+                <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
+                <Label Text="Razão Social"/>
                 <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray" />
-                <Label Text="CPF"/>
-                <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
-                <Label Text="CEP"/>
-                <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
                 <Label Text="Rua"/>
                 <Entry />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
@@ -20,7 +23,7 @@
                         <Entry/>
                     </StackLayout>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Cidade" WidthRequest="50" />
+                        <Label Text="Estado" WidthRequest="50" />
                         <Entry/>
                     </StackLayout>
                 </StackLayout>

@@ -4,42 +4,55 @@
              x:Class="JetSolutionsApp.Views.CadastroCli">
     
         <StackLayout Margin="10" Spacing="1">
-      
-            <Label Text="Nome"/>
-            <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray"/>
 
-            <Label Text="CPF"/>
-            <Entry Placeholder="Digite apenas número" PlaceholderColor="LightGray"/>
+                <Label Text="Cadastro de Cliente" 
+                                       FontSize="Large" 
+                                       HorizontalOptions="Center" 
+                                       FontAttributes="Bold"
+                                       Margin="3, 3, 3, 25">            
+                </Label>
+                 
 
-            <Label Text="Email"/>
-            <Entry Placeholder="exemplo@exemplo.com" PlaceholderColor="LightGray"/>
+                <Label Text="Nome" FontAttributes="Bold"/>
+                <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray"/>
 
-            <Label Text="Celular"/>
-            <Entry Placeholder="(12)34567-8910" PlaceholderColor="LightGray"/>
+                <Label Text="CPF"  FontAttributes="Bold"/>
+                <Entry Placeholder="Digite apenas número" PlaceholderColor="LightGray"/>
 
-            <Label Text="CEP"/>
-            <Entry Placeholder="Digite apenas números" PlaceholderColor="LightGray"/>
+                <Label Text="Email"  FontAttributes="Bold" />
+                <Entry Placeholder="exemplo@exemplo.com" PlaceholderColor="LightGray"/>
 
-            <Label Text="Rua"/>
-            <Entry  />
+               <Label Text="Celular" FontAttributes="Bold"/>
+               <Entry Placeholder="(12)34567-8910" PlaceholderColor="LightGray"/>
 
-        <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout>
+                        <Label Text="CEP"  FontAttributes="Bold"/>
+                        <Entry Placeholder="Digite apenas números" PlaceholderColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="End" HorizontalOptions="Start">
+                        <Button WidthRequest="45" HeightRequest="45" Image="search_32.png"/>
+                    </StackLayout>
+                </StackLayout>
+                <Label Text="Rua"  FontAttributes="Bold"/>
+                <Entry/>
+
+                <StackLayout Orientation="Horizontal">
                     <StackLayout WidthRequest="80">
-                        <Label Text="Número"/>
+                        <Label Text="Número"  FontAttributes="Bold"/>
                         <Entry />
                     </StackLayout>
 
                     <StackLayout HorizontalOptions="FillAndExpand">
-                        <Label Text="Cidade"/>
+                        <Label Text="Cidade" FontAttributes="Bold"/>
                         <Entry />
                     </StackLayout>
 
-                    <StackLayout WidthRequest="50">
-                        <Label Text="Estado"/>
+                    <StackLayout WidthRequest="70">
+                        <Label Text="Estado" FontAttributes="Bold"/>
                         <Entry />
                     </StackLayout>
-
-        </StackLayout>
+               </StackLayout>
 
 
           <StackLayout Orientation="Horizontal">
@@ -63,9 +76,6 @@
                     BorderRadius="8">
             </Button>
 
-          </StackLayout>
-      
-    </StackLayout>
-        
-   
+          </StackLayout>     
+    </StackLayout>  
 </ContentPage>
