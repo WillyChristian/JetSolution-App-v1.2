@@ -10,13 +10,24 @@
                        HorizontalOptions="Center" 
                        FontAttributes="Bold"
                        Margin="3, 3, 3, 25"/>
-
-                <Label Text="CNPJ"/>
-                <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
+                
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Label Text="CNPJ"/>
+                        <Entry Placeholder="Somente números" PlaceholderColor="LightGray" />
+                   </StackLayout>
+                    
+                   <StackLayout VerticalOptions="End" HorizontalOptions="Start">
+                        <Button WidthRequest="45" HeightRequest="45" Image="search_32.png" />
+                        </StackLayout>
+                    </StackLayout>                    
+                
                 <Label Text="Razão Social"/>
                 <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray" />
+                
                 <Label Text="Rua"/>
                 <Entry />
+                
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                         <Label Text="Bairro"/>
@@ -27,8 +38,10 @@
                         <Entry/>
                     </StackLayout>
                 </StackLayout>
+                
                 <Label Text="Telefone"/>
                 <Entry Placeholder="(12)34567-7890" PlaceholderColor="LightGray"/>
+                
                 <Label Text="Email"/>
                 <Entry Placeholder="exemplo@provedor.com" PlaceholderColor="LightGray"/>
 
