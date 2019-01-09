@@ -3,18 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JetSolutionsApp.Views.CadastroCli">
     
-        <StackLayout>
-            <Label  />
-            <StackLayout>
-                <Button Text="Cadastre-se!" 
+        <StackLayout Margin="10" Spacing="1">
+      
+            <Label Text="Nome"/>
+            <Entry Placeholder="Nome Completo" PlaceholderColor="LightGray"/>
+
+            <Label Text="CPF"/>
+            <Entry Placeholder="Digite apenas número" PlaceholderColor="LightGray"/>
+
+            <Label Text="Email"/>
+            <Entry Placeholder="exemplo@exemplo.com" PlaceholderColor="LightGray"/>
+
+            <Label Text="Celular"/>
+            <Entry Placeholder="(12)34567-8910" PlaceholderColor="LightGray"/>
+
+            <Label Text="CEP"/>
+            <Entry Placeholder="Digite apenas números" PlaceholderColor="LightGray"/>
+
+            <Label Text="Rua"/>
+            <Entry  />
+
+        <StackLayout Orientation="Horizontal">
+                    <StackLayout WidthRequest="80">
+                        <Label Text="Número"/>
+                        <Entry />
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Label Text="Cidade"/>
+                        <Entry />
+                    </StackLayout>
+
+                    <StackLayout WidthRequest="50">
+                        <Label Text="Estado"/>
+                        <Entry />
+                    </StackLayout>
+
+        </StackLayout>
+
+
+          <StackLayout Orientation="Horizontal">
+            <Button Text="Cadastrar" 
                     BackgroundColor="#70db70"
                     Clicked="CriaCad"
                     TextColor="White" 
                     BorderRadius="8">
-                </Button>
-               
-            </StackLayout>
-        </StackLayout>
+            </Button>
+            <Button Text="Cancelar" 
+                    BackgroundColor="#ff1a1a"
+                    Clicked="CriaCad"
+                    TextColor="White" 
+                    BorderRadius="8">
+            </Button>
+
+            <Button Text="Limpar Ficha" 
+                    BackgroundColor="#ffff4d"
+                    Clicked="CriaCad"
+                    TextColor="Black" 
+                    BorderRadius="8">
+            </Button>
+
+          </StackLayout>
+      
+    </StackLayout>
         
    
 </ContentPage>
