@@ -11,7 +11,7 @@ namespace JetSolutionsApp
         public Application()
         {
             
-            MainPage = new NavigationPage(new Page1());
+            MainPage = new NavigationPage(new MainPage());
         }  
 
         protected override void OnStart()
