@@ -35,14 +35,6 @@ namespace JetSolutionsApp.Views
             Button btn = (Button)sender;
             Combustivel comb = (Combustivel)btn.CommandParameter;
             DisplayAlert("Aviso", "Visitar o site " + nome, "cacelar", "reservar");
-
-
-         
-
-
-
-
-
         }
     }
 }

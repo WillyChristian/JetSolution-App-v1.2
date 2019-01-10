@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JetSolutionsApp.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Aeroporto" Clicked="Button_Clicked"/>
+            <Button Text="Atendimento" Clicked="Button_Clicked_0"/>
+            <Button Text="Abastecimento" Clicked="Button_Clicked_1"/>
+            <Button Text="Consumo" Clicked="Button_Clicked_2"/>
+            <Button Text="Tapa" Clicked="Button_Clicked_3"/>
+            <Button Text="Avaliação" Clicked="Button_Clicked_4"/>
+            <Button Text="Hangar" Clicked="Button_Clicked_5"/>
+            <Button Text="Mapa" Clicked="Button_Clicked_6"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

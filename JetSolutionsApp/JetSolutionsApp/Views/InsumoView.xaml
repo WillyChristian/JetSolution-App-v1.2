@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:cons="clr-namespace:JetSolutionsApp.Models"
-             x:Class="JetSolutionsApp.View.ConsumoView">
+             x:Class="JetSolutionsApp.Views.InsumoView">
     <ContentPage.Content>
         <StackLayout>
             <TableView Intent="Settings" HorizontalOptions="CenterAndExpand">
                 <TableRoot>
                     <TableSection  Title="Drinks And Snacks" >
                         <SwitchCell Text="{Binding optionAgua }" On="False"  />
+                        <SwitchCell Text="{Binding optionSuco}" On="False" />
                         <SwitchCell Text="{Binding optionSorvete}" On="False"/>
                         <SwitchCell Text="{Binding optionNozes}" On="False"/>
                         <SwitchCell Text="{Binding optionCastanhas}" On="False"/>
-                        <SwitchCell x:Name="Frutas" Text="{Binding optionFrutas}" On="False"/>
+                        <SwitchCell Text="{Binding optionFrutas}" On="False"/>
                     </TableSection>
                 </TableRoot>
             </TableView>

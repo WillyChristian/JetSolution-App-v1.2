@@ -11,7 +11,7 @@
 
                 <ListView  x:Name="ListaFornecedores" 
                            ItemsSource="{Binding Fornecedores}"
-                            RowHeight="80"
+                            RowHeight="60"
                            HorizontalOptions="Center">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -19,26 +19,26 @@
                                 <StackLayout Orientation="Vertical"  HorizontalOptions="CenterAndExpand">
                                     <StackLayout Orientation="Horizontal"  >
                                         <Label 
-                                               Text="{Binding Fornecedor}"                                          WidthRequest="180"
-                                               FontSize="20"
+                                               Text="{Binding Fornecedor}"                                          WidthRequest="80"
+                                               FontSize="14"
                                                HorizontalOptions="End"
                                                VerticalOptions="End"/>
                                         <Label Text="Preço: R$ "
-                                               FontSize="16"
+                                               FontSize="11"
                                                HorizontalOptions="End"
                                                VerticalOptions="End"
                                                />
                                         <Label Text="{Binding Preco}"
-                                               FontSize="16"
-                                               WidthRequest="80" 
+                                               FontSize="12"
+                                               WidthRequest="40" 
                                                VerticalOptions="End"
                                                HorizontalOptions="Start"/>
 
                                         <Button x:Name="btn"
-                                                FontSize="18"
-                                                HeightRequest="50"
-                                                WidthRequest="130"
-                                                VerticalOptions="CenterAndExpand"
+                                                FontSize="15"
+                                                HeightRequest="38"
+                                                WidthRequest="75"
+                                                VerticalOptions="EndAndExpand"                             
                                                 BackgroundColor="DarkBlue"
                                                 BorderWidth="2"
                                                 BorderColor="DarkGray"
@@ -48,10 +48,9 @@
                                     <StackLayout>
                                         <Label x:Name="DistribuidorLbl"  
                                                Text="{Binding Distribuidor}"
-                                               FontSize="11"
-                                               WidthRequest="150"
+                                               FontSize="11"                                              
                                                VerticalOptions="Start"
-                                               HorizontalOptions="CenterAndExpand"
+                                               HorizontalOptions="FillAndExpand"
                                                />
                                     </StackLayout>
                                 </StackLayout>

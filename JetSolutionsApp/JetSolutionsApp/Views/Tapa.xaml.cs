@@ -16,5 +16,13 @@ namespace JetSolutionsApp.Views
         {
             InitializeComponent();
         }
+
+        private void Button_ClickedTapa(object sender, EventArgs e)
+        {
+            DisplayAlert("Avaliação", "Nome: " + EtrTapaName + " - " + EditorTapaTxt, "OK");
+            
+            EtrTapaName.Text = null;
+            EditorTapaTxt.Text = null;
+        }    
     }
 }

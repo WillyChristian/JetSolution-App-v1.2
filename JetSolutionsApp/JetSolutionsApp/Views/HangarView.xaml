@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JetSolutionsApp.Views.HangarView">
+    <ContentPage.Content>
+       
+        <StackLayout>
+            
+            <StackLayout>
+                <Image Source="logoJet4u.png" WidthRequest="150"  HeightRequest="75" HorizontalOptions="Center" Margin="0,-15,0,15"/>
+            </StackLayout>
+            <StackLayout>                
+            <ListView x:Name="ListaHangar" 
+                          ItemsSource="{Binding Hangares}" 
+                          ItemTapped="ItemSelectList"
+                          RowHeight="60"
+                          HeightRequest="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="{Binding NomeHangar}" FontSize="15"  WidthRequest="80" VerticalOptions="End"/>
+                                        <Label Text="  Diária R$ " VerticalOptions="End" HorizontalOptions="End"/>
+                                        <Label Text="{Binding PrecoDiaria}" FontSize="15" VerticalOptions="End" HorizontalOptions="Start"/>
+                                    </StackLayout>
+                                <StackLayout Orientation="Horizontal" >
+                                    <Label Text="{Binding Airport}" FontSize="11" Opacity="0.75" HorizontalOptions="Center"
+                                           VerticalOptions="Start"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </StackLayout>
+            
+                <StackLayout VerticalOptions=" Center" HorizontalOptions="Center">
+                <ScrollView>
+                    <Grid Margin="5,30,5,30">
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                       <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label
+                            Grid.Column="0" 
+                            Grid.Row="0"
+                            Text="Data Início" 
+                            FontSize="15"
+                            Margin=" 10,5,10,5"
+                            HorizontalOptions="Center"/>
+                        <DatePicker                            
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            x:Name="startDatePicker"
+                            Format="Y"                                    
+                            Margin="10, 0, 0, 10"
+                            DateSelected="StartDatePicker_DateSelected" />
+                        <StackLayout
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Orientation="Horizontal" 
+                            HorizontalOptions="Center">
+                            <Label Text="Início" 
+                                   FontSize="14"
+                                   VerticalOptions="End"/>
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="2"
+                               x:Name="LblStartDate"
+                               HorizontalOptions="CenterAndExpand"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                               />
+                        </StackLayout>
+                        <Label
+                            Grid.Column="1" 
+                            Grid.Row="0"
+                            Text="Data Final" 
+                            FontSize="15"
+                            Margin=" 10,5,10,5"
+                            HorizontalOptions="Center"/>
+                        <DatePicker                            
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            x:Name="endDatePicker"
+                            MinimumDate="{Binding Source={x:Reference startDatePicker},
+                                    Path=Date}"
+                            Format="Y"                                    
+                            Margin="10, 0, 0, 10"
+                            DateSelected="EndDatePicker_DateSelected" />
+                        <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            Orientation="Horizontal" 
+                            HorizontalOptions="Center">
+                            <Label
+                                Text="Fim" 
+                                FontSize="14"
+                                VerticalOptions="End"/>
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="2"
+                                x:Name="LblEndDate"
+                                HorizontalOptions="CenterAndExpand"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                               />
+                        </StackLayout>
+                        
+                    </Grid>                    
+                </ScrollView>
+                <StackLayout>
+                    <Label 
+                           x:Name="LblResultDays"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center" 
+                        FontSize="16"/>
+                </StackLayout>
+                    
+            </StackLayout>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

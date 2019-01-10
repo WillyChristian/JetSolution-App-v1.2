@@ -16,5 +16,21 @@ namespace JetSolutionsApp.Views
         {
             InitializeComponent();
         }
+
+        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            NotaAvaliacao.Text = e.NewValue.ToString();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var nota = string.Format(NotaAvaliacao.Text);
+            var nome = string.Format(EtrName.Text);
+            var editor = string.Format(EditorTxt.Text);
+            DisplayAlert("Avaliação", "Nota: " + nota + " Nome: " + nome + " - " + editor, "OK");
+            NotaAvaliacao.Text= "0";
+            EtrName.Text = null;
+            EditorTxt.Text = null;
+        }
     }
 }

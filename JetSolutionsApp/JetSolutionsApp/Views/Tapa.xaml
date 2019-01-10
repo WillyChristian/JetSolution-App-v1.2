@@ -4,9 +4,42 @@
              x:Class="JetSolutionsApp.Views.Tapa">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Essa é a rede 'social' dos Pilotos"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Image Source="logoJet4u.png" WidthRequest="150"  HeightRequest="75" HorizontalOptions="Center" Margin="0,-15,0,0"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry                     
+                            Placeholder="Digite o seu nome"
+                            BackgroundColor="#FCFFFC"
+                            x:Name="EtrTapaName"
+                            WidthRequest="300"
+                            FontSize="15"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="FillAndExpand"
+                            Margin="15"/>
+                <Editor
+                            x:Name="EditorTapaTxt"  
+                            BackgroundColor="#FCFFFC"
+                            WidthRequest="250"
+                            HeightRequest="200"
+                            Placeholder="Críticas e sugestões digite aqui..."
+                            FontSize="12"
+                            PlaceholderColor="Blue"
+                            Margin="5"/>
+                <Button 
+                            Text="Enviar"
+                            Clicked="Button_ClickedTapa"
+                            BorderWidth="2"
+                            WidthRequest="100"
+                            BorderColor="#23F2EF"
+                            BackgroundColor="#09449C"
+                            FontSize="18"
+                            Margin="10"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            TextColor="White"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -43,7 +43,7 @@ namespace JetSolutionsApp.Views
         }
         private void ChamaSumo(object sender, EventArgs e)
         {
-            Application.Naveg.Detail = new NavigationPage(new Insumos());
+            Application.Naveg.Detail = new NavigationPage(new InsumoView());
             Application.Naveg.IsPresented = false;
         }
     }
