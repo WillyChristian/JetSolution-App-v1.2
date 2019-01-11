@@ -18,6 +18,8 @@ namespace JetSolutionsApp.Views.Menu
 
             Master = new Menu();
             Detail = new NavigationPage(new Home());
+            Application.Navegacao = this;
+
         }
     }
 }

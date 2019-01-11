@@ -7,7 +7,8 @@ namespace JetSolutionsApp
 {
     public partial class Application : Xamarin.Forms.Application
     {
-        public static MasterDetailPage Naveg { get; set; }
+        public static MasterDetailPage Navegacao { get; set; }
+
         public Application()
         {
             

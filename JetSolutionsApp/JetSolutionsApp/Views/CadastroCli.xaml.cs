@@ -12,9 +12,6 @@ namespace JetSolutionsApp.Views
             InitializeComponent();
         }
 
-        private void CriaCad(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new Menu.Controle();
-        }
+        private void CriaCad(object sender, EventArgs e) => Application.Current.MainPage = new Menu.Controle();
     }
 }

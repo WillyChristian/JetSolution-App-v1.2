@@ -2,12 +2,80 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Menu"
+             Padding="0,40,0,0"
+             Icon="menu_50.png"
+             BackgroundColor="#668cff"
              x:Class="JetSolutionsApp.Views.Menu.Menu">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="5" Spacing="30">
+                <Image Source="logo_branca.png" Margin="5, 5, 5, 30"/>
+                <StackLayout >
+                    <Label Text="Menu Principal" 
+                           TextColor="White" 
+                           FontAttributes="Bold" 
+                           FontSize="24"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            
+            </StackLayout>
+            <Button Text="Dados Pessoais" 
+                    Clicked="ChamaCli"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+            
+            <Button Text="Cadastro Empresa"
+                    Clicked="ChamaEmpresa"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            <Button Text="Ordem de Serviço"
+                    Clicked="ChamaOS"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            <Button Text="Hangar"
+                    Clicked="ChamaHan"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+            
+            <Button Text="Insumos"
+                    Clicked="ChamaSumo"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            <Button Text="Combustível"
+                    Clicked="ChamaCombu"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            <Button Text="Aeroportos"
+                    TextColor="White"
+                    Clicked="ChamaAero"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            <Button Text="Tapa"
+                    Clicked="ChamaTapa"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"/>
+
+            
+
+            
+
+            
+
+            
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
