@@ -10,14 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace JetSolutionsApp.Views.Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ControleMaster : MasterDetailPage
+    public partial class Controle : MasterDetailPage
     {
-        public ControleMaster()
+        public Controle()
         {
             InitializeComponent();
+
+            Master = new Menu();
             Detail = new NavigationPage(new Home());
-            Master = new MenuLateral();
-            Application.Naveg = this;
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +14,7 @@ namespace JetSolutionsApp.Views
 
         private void CriaCad(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new Menu.ControleMaster());
+            Application.Current.MainPage = new Menu.Controle();
         }
     }
 }

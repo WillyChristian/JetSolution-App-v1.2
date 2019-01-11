@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace JetSolutionsApp.Views
+namespace JetSolutionsApp.Views.Menu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CadastroEmp : ContentPage
+    public partial class Home : ContentPage
     {
-        public CadastroEmp()
+        public Home()
         {
             InitializeComponent();
-        }
-        private void CriaCadastro(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new Views.Menu.Controle();
         }
     }
 }

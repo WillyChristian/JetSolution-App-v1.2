@@ -8,10 +8,9 @@ namespace JetSolutionsApp
         public MainPage()
         {
             InitializeComponent();
+
+            CriaCadastro.Clicked += (sender, e) => Xamarin.Forms.Application.Current.MainPage = new Views.CadastroCli();
         }
-        public void CriaCadastro(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new NavigationPage(new Views.CadastroCli());
-        }
+        
     }
 }
