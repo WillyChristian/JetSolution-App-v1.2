@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:tab="clr-namespace:JetSolutionsApp.Views.Aba"
+            Title=" Página Inicial"
              x:Class="JetSolutionsApp.Views.Menu.Home">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+
+    <tab:Parceiros Title="Parceiros" Icon="parceiro_50px.png"/>
+    <tab:Social Title="Social" Icon="people_50px.png"/>
+    <tab:Sobre Title="Sobre nós" Icon="question_50px.png"/>
+</TabbedPage>
