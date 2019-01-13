@@ -16,5 +16,11 @@ namespace JetSolutionsApp.Views
         {
             InitializeComponent();
         }
+
+        private async void BtAirport(object sender, EventArgs e) => await Navigation.PushAsync(new AeroportoView());
+        private async void BtJetFuel(object sender, EventArgs e) => await Navigation.PushAsync(new CombustivelView());
+        private async void BtMapa(object sender, EventArgs e) => await Navigation.PushAsync(new Mapa());
+        private async void BtDica(object sender, EventArgs e) => await Navigation.PushAsync(new Tapa());
+             
     }
 }

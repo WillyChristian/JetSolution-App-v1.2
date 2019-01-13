@@ -49,33 +49,10 @@
                     BackgroundColor="Transparent"
                     BorderColor="Transparent"/>
 
-            <Button Text="Combustível"
-                    Clicked="ChamaCombu"
-                    TextColor="White"
-                    BackgroundColor="Transparent"
-                    BorderColor="Transparent"/>
-
-            <Button Text="Aeroportos"
-                    TextColor="White"
-                    Clicked="ChamaAero"
-                    BackgroundColor="Transparent"
-                    BorderColor="Transparent"/>
-
-            <Button Text="Tapa"
-                    Clicked="ChamaTapa"
-                    TextColor="White"
-                    BackgroundColor="Transparent"
-                    BorderColor="Transparent"/>
+          
 
             
-
-            
-
-            
-
-            
-
-            
+         
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

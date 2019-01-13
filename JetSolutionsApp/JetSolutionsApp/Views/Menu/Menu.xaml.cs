@@ -42,21 +42,8 @@ namespace JetSolutionsApp.Views.Menu
             Application.Navegacao.Detail.Navigation.PushAsync(new Views.InsumoView());
             Application.Navegacao.IsPresented = false;
         }
-        private void ChamaCombu(object sender, EventArgs e)
-        {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.CombustivelView());
-            Application.Navegacao.IsPresented = false;
-        }
-        private void ChamaAero(object sender, EventArgs e)
-        {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.AeroportoView());
-            Application.Navegacao.IsPresented = false;
-        }
 
-        private void ChamaTapa(object sender, EventArgs e)
-        {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.Tapa());
-            Application.Navegacao.IsPresented = false; ;
-        }
-    }
+    }  
+
+       
 }

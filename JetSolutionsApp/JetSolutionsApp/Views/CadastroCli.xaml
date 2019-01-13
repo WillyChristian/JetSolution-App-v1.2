@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JetSolutionsApp.Views.CadastroCli">
-    
+    <ScrollView>
         <StackLayout Margin="10" Spacing="1">
-
+        
                 <Label Text="Cadastro de Cliente" 
                                        FontSize="Large" 
                                        HorizontalOptions="Center" 
@@ -55,27 +55,27 @@
                </StackLayout>
 
 
-          <StackLayout Orientation="Horizontal">
-            <Button Text="Cadastrar" 
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cadastrar" 
                     BackgroundColor="#70db70"
                     Clicked="CriaCad"
                     TextColor="White" 
                     BorderRadius="8">
-            </Button>
-            <Button Text="Cancelar" 
+                </Button>
+                <Button Text="Cancelar" 
                     BackgroundColor="#ff1a1a"
                     Clicked="CriaCad"
                     TextColor="White" 
                     BorderRadius="8">
-            </Button>
+                </Button>
 
-            <Button Text="Limpar Ficha" 
+                <Button Text="Limpar Ficha" 
                     BackgroundColor="#ffff4d"
                     Clicked="CriaCad"
                     TextColor="Black" 
                     BorderRadius="8">
-            </Button>
-
-          </StackLayout>     
-    </StackLayout>  
+                </Button>
+            </StackLayout>
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

@@ -3,10 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JetSolutionsApp.Views.Servicos">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout 
+            Orientation="Vertical"
+            VerticalOptions="CenterAndExpand">
+            <StackLayout
+                  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">            
+                <Button                    
+                    Image= "airport.png"
+                    Clicked="BtAirport"
+                    WidthRequest="100" 
+                    HeightRequest="100" 
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    BorderColor="#000000"
+                    BorderRadius="10"/>
+                <Button                    
+                    Image= "jetFuel.png"
+                    Clicked="BtJetFuel"
+                    WidthRequest="100" 
+                    HeightRequest="100" 
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    BorderColor="#000000"
+                    BorderRadius="10"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button                    
+                    Image= "mapa.png"
+                    Clicked="BtMapa"
+                    WidthRequest="100" 
+                    HeightRequest="100" 
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    BorderColor="#000000"
+                    BorderRadius="10"/>
+                <Button                    
+                    Image= "indicacao.png"
+                    Clicked="BtDica"
+                    WidthRequest="100" 
+                    HeightRequest="100" 
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    BorderColor="#000000"
+                    BorderRadius="10"/>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
