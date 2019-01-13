@@ -56,6 +56,7 @@ namespace JetSolutionsApp.Views
         {
             var h = (Hangar)e.Item;
             DisplayAlert("Selecionado", String.Format("{0}  -  {1}  Valor da diária - R$ {2}.", h.NomeHangar, h.Airport, h.PrecoDiaria), "Confirmar");
+           
         }
 
         private void StartDatePicker_DateSelected(object sender, DateChangedEventArgs e)

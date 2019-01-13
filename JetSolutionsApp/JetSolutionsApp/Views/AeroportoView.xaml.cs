@@ -43,6 +43,7 @@ namespace JetSolutionsApp.Views
         {
             var Airport = (Aeroporto)e.Item;
             DisplayAlert("Destino", string.Format("O seu destino será o Aeroporto {0} em {1} / {2};  IATA - {3},  ICAO  {4}", Airport.Nome_Aeropoto, Airport.Municipio, Airport.Estado, Airport.IATA, Airport.ICAO), "Confirmar");
+            
         }
     }
 }
