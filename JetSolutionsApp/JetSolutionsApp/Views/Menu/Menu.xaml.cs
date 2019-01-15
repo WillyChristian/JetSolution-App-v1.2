@@ -32,14 +32,10 @@ namespace JetSolutionsApp.Views.Menu
             Application.Navegacao.Detail.Navigation.PushModalAsync(new Servicos());
             Application.Navegacao.IsPresented = false;
         }
-        private void ChamaHan(object sender, EventArgs e)
-        {
-            Application.Navegacao.Detail.Navigation.PushAsync(new HangarView());
-            Application.Navegacao.IsPresented = false;
-        }
+        
         private void ChamaSumo(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new InsumoView());
+            Application.Navegacao.Detail.Navigation.PushAsync(new Config());
             Application.Navegacao.IsPresented = false;
         }
 

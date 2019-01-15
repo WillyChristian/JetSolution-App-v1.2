@@ -37,22 +37,13 @@
                     BackgroundColor="Transparent"
                     BorderColor="Transparent"/>
 
-            <Button Text="Hangar"
-                    Clicked="ChamaHan"
-                    TextColor="White"
-                    BackgroundColor="Transparent"
-                    BorderColor="Transparent"/>
-            
-            <Button Text="Insumos"
-                    Clicked="ChamaSumo"
+           
+            <Button Text="Configurações"
+                    Clicked="ChamaConfig"
                     TextColor="White"
                     BackgroundColor="Transparent"
                     BorderColor="Transparent"/>
 
-          
-
-            
-         
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
