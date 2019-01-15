@@ -15,31 +15,31 @@ namespace JetSolutionsApp.Views.Menu
         public Menu()
         {
             InitializeComponent();
-
+            
         }
         private void ChamaCli(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.CadastroCli());
+            Application.Navegacao.Detail.Navigation.PushAsync(new CadastroCli());
             Application.Navegacao.IsPresented = false;
         }
         private void ChamaEmpresa(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.CadastroEmp());
+            Application.Navegacao.Detail.Navigation.PushAsync(new CadastroEmp());
             Application.Navegacao.IsPresented = false;
         }
         private void ChamaOS(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.Servicos());
+            Application.Navegacao.Detail.Navigation.PushModalAsync(new Servicos());
             Application.Navegacao.IsPresented = false;
         }
         private void ChamaHan(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.HangarView());
+            Application.Navegacao.Detail.Navigation.PushAsync(new HangarView());
             Application.Navegacao.IsPresented = false;
         }
         private void ChamaSumo(object sender, EventArgs e)
         {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Views.InsumoView());
+            Application.Navegacao.Detail.Navigation.PushAsync(new InsumoView());
             Application.Navegacao.IsPresented = false;
         }
 
