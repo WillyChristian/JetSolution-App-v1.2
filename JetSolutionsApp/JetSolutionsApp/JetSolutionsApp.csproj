@@ -11,7 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="jquery.carousel.touch.slider.squadwuschel" Version="1.0.2" />
+    <PackageReference Include="Naxam.CarouselView" Version="0.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.62955-pre2" />
   </ItemGroup>
 
   <ItemGroup>
