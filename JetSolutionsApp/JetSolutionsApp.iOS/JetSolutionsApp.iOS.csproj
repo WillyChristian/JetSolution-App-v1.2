@@ -148,16 +148,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="jquery.carousel.touch.slider.squadwuschel">
-      <Version>1.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="Naxam.CarouselView">
-      <Version>0.0.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.62955-pre2" />
-    <PackageReference Include="Xamarin.Forms.CarouselView">
-      <Version>2.3.0-pre2</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

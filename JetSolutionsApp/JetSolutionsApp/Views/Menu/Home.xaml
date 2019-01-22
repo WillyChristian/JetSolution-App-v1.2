@@ -5,7 +5,7 @@
             Title=" Página Inicial"
              x:Class="JetSolutionsApp.Views.Menu.Home">
 
-    <tab:Parceiros Title="Parceiros" Icon="parceiro_50px.png"/>
+    <tab:Parceiros Title="Promoções e Descontos" Icon="parceiro_50px.png"/>
     <tab:Social Title="Social" Icon="people_50px.png"/>
     <tab:Sobre Title="Sobre nós" Icon="question_50px.png"/>
 </TabbedPage>

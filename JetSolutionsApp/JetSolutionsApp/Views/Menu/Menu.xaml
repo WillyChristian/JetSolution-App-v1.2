@@ -39,7 +39,7 @@
 
            
             <Button Text="Configurações"
-                    Clicked="ChamaConfig"
+                   
                     TextColor="White"
                     BackgroundColor="Transparent"
                     BorderColor="Transparent"/>

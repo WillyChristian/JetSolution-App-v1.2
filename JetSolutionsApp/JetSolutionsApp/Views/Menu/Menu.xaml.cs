@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,11 +28,11 @@ namespace JetSolutionsApp.Views.Menu
             Application.Navegacao.IsPresented = false;
         }
         
-        private void ChamaSumo(object sender, EventArgs e)
-        {
-            Application.Navegacao.Detail.Navigation.PushAsync(new Config());
-            Application.Navegacao.IsPresented = false;
-        }
+        //private void ChamaConfig(object sender, EventArgs e)
+        //{
+        //    Application.Navegacao.Detail.Navigation.PushAsync(new Config());
+        //    Application.Navegacao.IsPresented = false;
+        //}
 
     }  
 
