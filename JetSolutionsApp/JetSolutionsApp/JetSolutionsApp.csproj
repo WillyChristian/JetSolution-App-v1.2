@@ -14,6 +14,7 @@
     <PackageReference Include="jquery.carousel.touch.slider.squadwuschel" Version="1.0.2" />
     <PackageReference Include="Naxam.CarouselView" Version="0.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.62955-pre2" />
+    <PackageReference Include="Xamarin.Forms.CarouselView" Version="2.3.0-pre2" />
   </ItemGroup>
 
   <ItemGroup>
