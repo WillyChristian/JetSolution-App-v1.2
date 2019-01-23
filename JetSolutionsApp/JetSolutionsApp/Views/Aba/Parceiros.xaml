@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="JetSolutionsApp.Views.Aba.Parceiros">
-    <ContentPage.Content>
+    
         <StackLayout>
-            <Label Text="Welcome to Parceiros Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+        <CarouselView x:Name="slideTopo">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}"
+                           FontSize="50"/>
+                </DataTemplate>                
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </StackLayout>   
 </ContentPage>

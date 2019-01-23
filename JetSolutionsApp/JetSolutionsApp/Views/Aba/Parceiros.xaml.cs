@@ -15,6 +15,13 @@ namespace JetSolutionsApp.Views.Aba
         public Parceiros()
         {
             InitializeComponent();
+
+              var nomesCarousel = new List<string>
+              {
+                  "jose"," maria", "joaquim", "joão"
+              };
+            slideTopo.ItemsSource = nomesCarousel;
         }
+
     }
 }
