@@ -4,12 +4,11 @@
              x:Class="JetSolutionsApp.Views.Aba.Parceiros">
     
         <StackLayout>
-        <CarouselView x:Name="slideTopo">
+        <CarouselView x:Name="slideTopo" ItemsSource="{Binding .}">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding .}"
-                           FontSize="50"/>
-                </DataTemplate>                
+                    <Label Text="{Binding}" FontSize="50"/>
+                </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
     </StackLayout>   

@@ -12,16 +12,9 @@ namespace JetSolutionsApp.Views.Aba
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Parceiros : ContentPage
     {
-        public Parceiros()
-        {
-            InitializeComponent();
+        public object slideTopo;
 
-              var nomesCarousel = new List<string>
-              {
-                  "jose"," maria", "joaquim", "joão"
-              };
-            slideTopo.ItemsSource = nomesCarousel;
-        }
-
+        public Parceiros() => InitializeComponent();
     }
+
 }
